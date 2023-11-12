@@ -7,7 +7,12 @@
     <Icon icon="solar:login-2-line-duotone" width="27" /> Đăng nhập
   </a>
 
-  <a class="btn" href="/" target="_blank" title="Source code!!!">
+  <a
+    class="btn"
+    href="https://github.com/taitapcode/my4nimelist"
+    target="_blank"
+    title="Source code!!!"
+  >
     <Icon icon="mdi:github" width="27" />
   </a>
 </div>

@@ -19,5 +19,5 @@ input {
 }
 
 .btn {
-  @apply p-2 transition-colors rounded-full cursor-pointer hover:bg-white/25;
+  @apply cursor-pointer rounded-full p-2 transition-colors hover:bg-white/25;
 }

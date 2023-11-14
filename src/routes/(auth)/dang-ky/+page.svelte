@@ -52,5 +52,5 @@
   </fieldset>
 
   <button type="submit">Đăng nhập</button>
-  <p>Chưa có tài khoản <a href="/dang-ky" class="text-blue-500 underline">Đăng ký</a></p>
+  <p>Đã có tài khoản <a href="/dang-nhap" class="text-blue-500 underline">Đăng nhập</a></p>
 </form>

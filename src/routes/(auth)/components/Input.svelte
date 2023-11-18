@@ -22,8 +22,8 @@
   });
 </script>
 
-<fieldset id={'field-' + name}>
-  <label class={cx(error && 'text-red-500/90')} for={'input-' + name}>{label}</label>
+<fieldset class="flex w-full flex-col gap-2" id={'field-' + name}>
+  <label class={cx(error && 'text-red-400')} for={'input-' + name}>{label}</label>
   <input
     class={styledInput({ variant: error ? 'error' : 'default' })}
     id={'input-' + name}
@@ -32,4 +32,7 @@
     use:selectTextOnFocus
     use:setTypeAction
   />
+  {#if error}
+    <p class="text-sm text-red-400">{error}</p>
+  {/if}
 </fieldset>

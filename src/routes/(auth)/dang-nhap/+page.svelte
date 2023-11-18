@@ -1,7 +1,8 @@
 <script lang="ts">
   import type { PageData } from './$types';
   import { superForm } from 'sveltekit-superforms/client';
-  import { selectTextOnFocus } from '$lib/actions';
+  import Button from '../components/Button.svelte';
+  import Input from '../components/Input.svelte';
 
   export let data: PageData;
 
@@ -15,30 +16,23 @@
 <form method="POST" use:enhance>
   <h1>Đăng nhập</h1>
 
-  <fieldset>
-    <label for="username">Tên tài khoản</label>
-    <input
-      type="text"
-      id="username"
-      name="username"
-      placeholder="Nhập tên tài khoản"
-      bind:value={$form.username}
-      use:selectTextOnFocus
-    />
-  </fieldset>
+  <Input
+    name="username"
+    label="Tên đăng nhập"
+    placeholder="Nhâp tên tài khoản"
+    bind:value={$form.username}
+  />
 
-  <fieldset>
-    <label for="password">Mật khẩu</label>
-    <input
-      type="password"
-      id="password"
-      name="password"
-      placeholder="Nhập tên mật khẩu"
-      bind:value={$form.password}
-      use:selectTextOnFocus
-    />
-  </fieldset>
+  <Input
+    name="password"
+    type="password"
+    label="Mật khẩu"
+    placeholder="Nhập mật khẩu"
+    bind:value={$form.password}
+  />
 
-  <button type="submit">Đăng nhập</button>
-  <p>Chưa có tài khoản <a href="/dang-ky" class="text-blue-500 underline">Đăng ký</a></p>
+  <Button disabled={$submitting}>Đăng nhập</Button>
+  <p>
+    Chưa có tài khoản <a href="/dang-ky" class="text-blue-500 underline">Đăng ký</a>
+  </p>
 </form>

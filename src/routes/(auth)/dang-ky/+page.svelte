@@ -2,6 +2,8 @@
   import type { PageData } from './$types';
   import { superForm } from 'sveltekit-superforms/client';
   import { selectTextOnFocus } from '$lib/actions';
+  import Button from '../components/Button.svelte';
+  import Input from '../components/Input.svelte';
 
   export let data: PageData;
 
@@ -15,42 +17,30 @@
 <form method="POST" use:enhance>
   <h1>Đăng ký</h1>
 
-  <fieldset>
-    <label for="username">Tên tài khoản</label>
-    <input
-      type="text"
-      id="username"
-      name="username"
-      placeholder="Nhập tên tài khoản"
-      bind:value={$form.username}
-      use:selectTextOnFocus
-    />
-  </fieldset>
+  <Input
+    label="Tên tài khoản"
+    type="text"
+    name="username"
+    placeholder="Nhập tên tài khoản"
+    bind:value={$form.username}
+  />
 
-  <fieldset>
-    <label for="password">Mật khẩu</label>
-    <input
-      type="password"
-      id="password"
-      name="password"
-      placeholder="Nhập tên mật khẩu"
-      bind:value={$form.password}
-      use:selectTextOnFocus
-    />
-  </fieldset>
+  <Input
+    label="Mật khẩu"
+    type="password"
+    name="password"
+    placeholder="Nhập tên mật khẩu"
+    bind:value={$form.password}
+  />
 
-  <fieldset>
-    <label for="confirmPassword">Xác nhận mật khẩu</label>
-    <input
-      type="password"
-      id="confirmPassword"
-      name="confirmPassword"
-      placeholder="Nhập tên mật khẩu"
-      bind:value={$form.confirmPassword}
-      use:selectTextOnFocus
-    />
-  </fieldset>
+  <Input
+    label="Xác nhận mật khẩu"
+    type="password"
+    name="confirmPassword"
+    placeholder="Nhập tên mật khẩu"
+    bind:value={$form.confirmPassword}
+  />
 
-  <button type="submit">Đăng nhập</button>
+  <Button disabled={$submitting}>Đăng ký</Button>
   <p>Đã có tài khoản <a href="/dang-nhap" class="text-blue-500 underline">Đăng nhập</a></p>
 </form>

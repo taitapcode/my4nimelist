@@ -1,5 +1,5 @@
 <script>
-  import './form.css';
+  import './components/form.css';
 </script>
 
 <slot />

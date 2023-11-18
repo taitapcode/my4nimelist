@@ -5,8 +5,8 @@ import { superValidate } from 'sveltekit-superforms/server';
 import { fail } from '@sveltejs/kit';
 
 const schema = z.object({
-  username: z.string({ required_error: 'Chưa nhập tên tài khoản' }),
-  password: z.string({ required_error: 'Chưa nhập mật khẩu' })
+  username: z.string().min(1, 'Chưa nhập tên tài khoản'),
+  password: z.string().min(1, 'Chưa nhập mật khẩu')
 });
 
 export const load = (async () => {

@@ -3,7 +3,7 @@
 </script>
 
 <form
-  class="absolute left-1/2 top-1/2 flex w-[27rem] -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-6 rounded-xl bg-slate-900/20 p-6 text-lg backdrop-blur-sm"
+  class="absolute left-1/2 top-1/2 flex w-[27rem] -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-6 rounded-md bg-slate-700/50 p-6 text-lg backdrop-blur-sm"
   method="POST"
   use:enhance
 >

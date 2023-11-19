@@ -3,14 +3,16 @@
   import Icon from '@iconify/svelte';
 </script>
 
-<div>
+<div class="items-center justify-center">
   <div
-    class="flex w-[27rem] flex-1 items-center gap-2 rounded-full border-[1px] border-slate-500 px-4 py-1 transition-colors duration-500 focus-within:border-blue-700"
+    class="flex w-[27rem] flex-row-reverse items-center gap-2 rounded-full border-2 border-slate-700 px-2 py-1 transition-colors duration-500 focus-within:border-blue-700"
   >
-    <input type="text" class="w-11/12" placeholder="Tìm kiếm" use:selectTextOnFocus />
-    <hr class="h-5 border-l-[1px] border-slate-500" />
-    <button class="px-3">
-      <Icon icon="ion:search-outline" width="27" />
-    </button>
+    <input
+      type="text"
+      class="w-11/12 text-sm text-gray-200"
+      placeholder="Tìm kiếm"
+      use:selectTextOnFocus
+    />
+    <Icon icon="fluent:search-48-filled" width="25" />
   </div>
 </div>

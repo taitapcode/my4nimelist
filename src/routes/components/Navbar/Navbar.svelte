@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Icon from '@iconify/svelte';
   import Search from './Search.svelte';
   import UserActions from './UserActions.svelte';
 </script>

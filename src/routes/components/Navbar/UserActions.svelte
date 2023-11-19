@@ -8,7 +8,7 @@
   </a>
 
   <a
-    class="btn"
+    class="rounded-full p-2 hover:bg-slate-700/50"
     href="https://github.com/taitapcode/my4nimelist"
     target="_blank"
     title="Source code!!!"

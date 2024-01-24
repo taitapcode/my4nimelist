@@ -8,7 +8,7 @@
   <div class="flex items-center gap-4">
     <a href="/" class="rounded-lg border-[1px] p-1 shadow-md">
       <div class="w-10">
-        <img class="max-w-full" src="{logo}" alt="logo" />
+        <img class="pointer-events-none max-w-full" src="{logo}" alt="logo" />
       </div>
     </a>
     <p class="font-medium">Lưu và đánh giá Anime</p>

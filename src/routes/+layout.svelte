@@ -1,6 +1,6 @@
 <script>
   import '../app.css';
-  import Navbar from './components/Navbar';
+  import Navbar from '$lib/components/navbar';
 </script>
 
 <Navbar />

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Icon from '@iconify/svelte';
+  import { Search } from 'lucide-svelte';
 
   function onFocus(event: FocusEvent) {
     (event.target as HTMLInputElement).select();
@@ -13,8 +13,7 @@
     type="text"
     class="peer w-11/12 text-slate-800"
     placeholder="Tìm kiếm anime, meme, ..." />
-  <Icon
-    icon="akar-icons:search"
+  <Search
     class="text-slate-700 transition-colors duration-200 hover:!text-slate-700 peer-placeholder-shown:text-slate-500"
     width="25"
     height="25" />

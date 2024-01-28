@@ -11,7 +11,7 @@
         <img class="max-w-full" src="{logo}" alt="logo" />
       </div>
     </a>
-    <p class="font-medium">Lưu và đánh giá Anime</p>
+    <p class="hidden font-medium lg:block">Lưu và đánh giá Anime</p>
   </div>
 
   <div class="flex justify-center">

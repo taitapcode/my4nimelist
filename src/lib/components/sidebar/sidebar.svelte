@@ -1,11 +1,12 @@
 <script>
+  import { Home, Newspaper, Clapperboard } from 'lucide-svelte';
   import Actions from './actions.svelte';
   import Link from './link.svelte';
-
-  import { Home } from 'lucide-svelte';
 </script>
 
-<div class="flex min-w-24 flex-col items-center py-6 [&>button]:h-12 [&>button]:w-12">
+<div class="flex min-w-24 flex-col items-center gap-2 py-6">
   <Actions />
-  <Link href="/" title="Trang chủ"><Home /></Link>
+  <Link href="/" title="Home" icon="{Home}" />
+  <Link href="/" title="Anime" icon="{Clapperboard}" />
+  <Link href="/" title="Bài viết" icon="{Newspaper}" />
 </div>
